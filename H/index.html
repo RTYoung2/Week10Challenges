@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom Manipulation Hard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="bg-red" onclick="updateTheBackground('bg-red')">
+    Turn it red!
+  </button>
+  <button class="bg-white" onclick="updateTheBackground('bg-white')">
+    Turn it white!
+  </button>
+  <script>
+    // Do Stuff Here
+    // Create two buttons, one that when clicked turns the background of the body red. The other, when clicked, turns the body's background color white. Each of the background colors should be defined as class styles and when the buttons are pushed the body's classList is updated to include the correct class for the background.
+
+    // Create a single function that takes an input className and updates the body's classList to ONLY include that className
+
+    // *Note: Check Canvas for the starter code needed for this exercise. The starter code will be located in a folder named hard_js.
+
+    window.updateTheBackground = function (className) {
+      // target the button, so when we click on the the red button the body turns red, and the same goes for white 
+
+      document.body.className = className
+
+    }
+  </script>
+</body>
+
+</html>
